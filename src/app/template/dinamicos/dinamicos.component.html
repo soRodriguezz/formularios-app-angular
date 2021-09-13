@@ -1,1 +1,25 @@
-<p>dinamicos works!</p>
+<h2>Template: <small> Dinámicos </small></h2>
+<hr>
+<form (ngSubmit)="guardar()" autocomplete="off">
+    <div class="mb-3 row">
+        <label class="col-sm3 col-form-label">Nombre</label>
+        <div class="col-sm-9">
+            <input class="form-control" placeholder="Nombre de la persona">
+            <span class="form-text text-danger">
+                Este campo es obligatorio
+            </span>
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <div class="col-sm-9">
+            <button type="button" (click)="guardar()" class="btn btn-primary float-end" required>
+                Guardar
+            </button>
+        </div>
+    </div>
+</form>
+
+/*
+ TODO Validar que el nombre sea obligatorio
+*/
